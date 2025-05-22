@@ -1,4 +1,13 @@
+import { Caudex } from "next/font/google";
+// import { 1885 Germinal.otf } from "next/font/local";
+
 import "@/app/_styles/globals.css";
+
+const caudex = Caudex({
+  subsets: ["latin"],
+  display: "swap",
+  weight: "400",
+});
 
 export const metadata = {
   title: {
@@ -11,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${caudex.className}`}>{children}</body>
     </html>
   );
 }
