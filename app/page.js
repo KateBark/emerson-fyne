@@ -1,5 +1,10 @@
+import { germinal } from "./fonts/germinal";
+
 export default function Page() {
   return (
-    <h1>Hello next</h1>
+    <div>
+      <h1>Hello next</h1>
+      <h2 className={germinal.className}>Germinal font</h2>
+    </div>
   );
 }

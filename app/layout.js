@@ -1,12 +1,12 @@
 import { Caudex } from "next/font/google";
-// import { 1885 Germinal.otf } from "next/font/local";
+import { germinal } from "./fonts/germinal";
 
 import "@/app/_styles/globals.css";
 
 const caudex = Caudex({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: ["400", "700"],
 });
 
 export const metadata = {
