@@ -1,5 +1,8 @@
+import "@/app/_styles/globals.css";
 import { Caudex } from "next/font/google";
 import { germinal } from "./fonts/germinal";
+import Head from "next/head";
+import Header from "@/app/_components/Header";
 
 import "@/app/_styles/globals.css";
 
@@ -20,7 +23,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${caudex.className}`}>{children}</body>
+      <Head>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+      </Head>
+      <body
+        className={`${caudex.className} antialiased bg-primary-400 text-primary-100 min-h-screen flex flex-col`}
+      >
+        <Header />
+      </body>
     </html>
   );
 }

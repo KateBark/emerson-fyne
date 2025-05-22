@@ -14,7 +14,7 @@ export default function Navigation() {
         </li>
         <li>
           <Link
-            href="/music"
+            href="/writing"
             className="hover:text-accent-400 transition-colors"
           >
             WRITING
@@ -22,7 +22,7 @@ export default function Navigation() {
         </li>
         <li>
           <Link
-            href="/music"
+            href="/contact"
             className="hover:text-accent-400 transition-colors"
           >
             CONTACT
