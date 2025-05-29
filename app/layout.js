@@ -3,6 +3,7 @@ import { Caudex } from "next/font/google";
 import { germinal } from "./fonts/germinal";
 import Head from "next/head";
 import Header from "@/app/_components/Header";
+import Footer from "./_components/Footer";
 
 import "@/app/_styles/globals.css";
 
@@ -31,12 +32,13 @@ export default function RootLayout({ children }) {
         />
       </Head>
       <body
-        className={`${caudex.className} antialiased bg-primary-400 text-primary-100 min-h-screen flex flex-col`}
+        className={`${caudex.className} antialiased text-primary-100 min-h-screen flex flex-col`}
       >
         <Header />
         <div className="flex-1 px-8 py-12">
           <main className="max-w-7xl mx-auto">{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );
