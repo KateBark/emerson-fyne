@@ -18,7 +18,8 @@ export const metadata = {
     template: "%s Emerson Fyne",
     default: "Home of Emerson Fyne",
   },
-  description: "Digital home of composer, singer, audio engineer Emerson Fyne)",
+  description:
+    "Digital home of composer, singer, writer and audio engineer Emerson Fyne)",
 };
 
 export default function RootLayout({ children }) {

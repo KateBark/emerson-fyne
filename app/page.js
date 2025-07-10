@@ -16,7 +16,7 @@ export default function Page() {
       />
       <div className="relative z-10 text-white text-center">
         <h1 className={`${germinal.className} text-8xl`}>Emerson~fyne</h1>
-        <div className="flex justify-around mt-10 text-4xl">
+        <div className="flex justify-around mt-20 text-4xl">
           <Link href="/music" className="hover:text-accent-400">
             Music
           </Link>

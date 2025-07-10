@@ -1,12 +1,12 @@
 import VideoPlayer from "./VideoPlayer";
 
 export default function VideoCard({ video }) {
-  const { title, video_id } = video;
+  const { title, video_id, thumbnail_url } = video;
 
   return (
     <div>
-      <h3 className="font-semibold text-2xl pt-9 pb-3">{title}</h3>
-      <VideoPlayer videoID={video_id} />
+      <h3 className="font-semibold pt-9 pb-3 text-center">{title}</h3>
+      <VideoPlayer videoId={video_id} />
     </div>
   );
 }
