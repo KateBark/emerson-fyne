@@ -20,13 +20,13 @@ export default async function Page() {
         <div className="col-span-4">
           <Image src={tunnel} alt="forest tunnel" />
         </div>
-        <div className="col-span-4">
+        <div className="col-span-2">
           <h1 className={`${germinal.className} text-center text-7xl pb-8`}>
-            W r i t i n g
+            W r i t i n g s / L y r i c s
           </h1>
-          <h2 className={`${germinal.className} text-center text-6xl pb-8`}>
+          {/* <h2 className={`${germinal.className} text-center text-6xl pb-8`}>
             lyrics
-          </h2>
+          </h2> */}
         </div>
       </div>
       <div className="pt-10">
