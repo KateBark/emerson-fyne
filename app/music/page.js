@@ -17,11 +17,11 @@ export default async function Page() {
 
   return (
     <div>
-      <h1 className="text-5xl text-center pb-10">M U S I C</h1>
+      <h1 className="text-4xl md:text-5xl text-center pb-10">M U S I C</h1>
       <div
-        className={`${germinal.className} flex text-6xl justify-center pb-10`}
+        className={`${germinal.className} flex flex-col md:flex-row text-4xl md:text-6xl justify-center items-center pb-10`}
       >
-        <h2 className="pr-20">o f f i c i a l</h2>
+        <h2 className="md:pr-20 pb-2 md:pb-0">o f f i c i a l</h2>
         <h2>a u d i o</h2>
       </div>
       <div>
@@ -35,19 +35,25 @@ export default async function Page() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-9 gap-x-24 gap-y-32 items-center pt-12">
-        <div className="col-span-4">
-          <Image src={running} alt="running through fields" />
+      <div className="grid grid-cols-1 md:grid-cols-9 gap-x-6 md:gap-x-24 gap-y-12 md:gap-y-32 items-center pt-12">
+        <div className="col-span-1 md:col-span-4">
+          <div className="w-full">
+            <Image
+              src={running}
+              alt="running through fields"
+              className="w-full h-auto object-cover rounded"
+            />
+          </div>
         </div>
-        <div className="col-span-5">
-          <h2 className="text-center text-2xl">Latest release</h2>
+        <div className="col-span-1 md:col-span-5">
+          <h2 className="text-center text-xl md:text-2xl">Latest release</h2>
 
           {featureVideo && <VideoCard video={featureVideo} />}
         </div>
       </div>
       <div>
         {videos.length > 0 && (
-          <div className="m-40">
+          <div className="m-8 md:m-40">
             {videos.map((video) => (
               <VideoCard key={video.id} video={video} />
             ))}
