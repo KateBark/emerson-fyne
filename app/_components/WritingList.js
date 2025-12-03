@@ -10,7 +10,7 @@ export default function WritingList({ writings }) {
   };
 
   return (
-    <div className="space-y-12 items-center mx-40">
+    <div className="space-y-12 w-full">
       {writings.map((item) => (
         <div
           key={item.id}
