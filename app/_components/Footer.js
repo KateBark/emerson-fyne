@@ -12,7 +12,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kate Bark | © 2025
+            Kate Bark | © 2026
           </Link>
         </li>
         <li>
