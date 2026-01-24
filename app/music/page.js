@@ -4,7 +4,6 @@ import { germinal } from "../fonts/germinal";
 import VideoCard from "../_components/VideoCard";
 import Link from "next/link";
 
-import { getVideos } from "../_lib/data-service";
 import { getFeatureVideo } from "../_lib/data-service";
 import { getOtherVideos } from "../_lib/data-service";
 
@@ -15,10 +14,6 @@ export const metadata = {
 export default async function Page() {
   const featureVideo = await getFeatureVideo();
   const videos = await getOtherVideos(featureVideo.id);
-
-  // export default async function Page() {
-  //   const videos = await getVideos([1, 5, 4]);
-  //   const featureVideo = await getFeatureVideo(2);
 
   return (
     <div>
