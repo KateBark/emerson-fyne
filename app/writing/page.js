@@ -30,12 +30,12 @@ export default async function Page() {
           <h1
             className={`${germinal.className} text-center text-4xl md:text-6xl pb-4 md:pb-8`}
           >
-            W r i t i n g/
+            W r i t i n g /
           </h1>
           <h2
             className={`${germinal.className} text-center text-4xl md:text-6xl pb-4 md:pb-8`}
           >
-            l y r i c s
+            L y r i c s
           </h2>
         </div>
       </div>
