@@ -4,8 +4,8 @@ import LinkedInIcon from "./LinkedInIcon";
 
 export default function Footer() {
   return (
-    <footer className="py-4 px-40">
-      <ul className="text-white items-center hover:text-accent-300 text-sm z-10 relative flex justify-around">
+    <footer className="py-4 px-4 md:px-8 lg:px-40">
+      <ul className="text-white items-center hover:text-accent-300 text-xs md:text-sm z-10 relative flex flex-col md:flex-row justify-center md:justify-around gap-4 md:gap-0">
         <li>
           <Link
             href="https://www.linkedin.com/in/kate-bark/"

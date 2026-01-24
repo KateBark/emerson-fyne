@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navigation() {
   return (
-    <nav className="z-10 text-base text-white">
-      <ul className="flex gap-16 items-center">
+    <nav className="z-10 text-white text-xs md:text-base">
+      <ul className="flex gap-4 md:gap-16 items-center">
         <li>
           <Link
             href="/music"
