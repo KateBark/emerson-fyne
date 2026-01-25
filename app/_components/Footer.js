@@ -8,7 +8,7 @@ export default function Footer() {
       <ul className="text-white items-center hover:text-accent-300 text-xs md:text-sm z-10 relative flex flex-col md:flex-row justify-center md:justify-around gap-4 md:gap-0">
         <li>
           <Link
-            href="https://www.linkedin.com/in/kate-bark/"
+            href="https://kate-bark-portfolio.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
