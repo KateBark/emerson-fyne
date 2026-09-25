@@ -5,8 +5,6 @@ import Head from "next/head";
 import Header from "@/app/_components/Header";
 import Footer from "./_components/Footer";
 
-import "@/app/_styles/globals.css";
-
 const caudex = Caudex({
   subsets: ["latin"],
   display: "swap",
@@ -14,12 +12,16 @@ const caudex = Caudex({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.emersonfyne.com"),
   title: {
     template: "%s Emerson Fyne",
     default: "Home of Emerson Fyne",
   },
   description:
-    "Digital home of composer, singer, writer and audio engineer Emerson Fyne)",
+    "Digital home of composer, singer, writer and audio engineer Emerson Fyne.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({ children }) {
